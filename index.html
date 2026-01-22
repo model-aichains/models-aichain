@@ -17,6 +17,34 @@
 .col-work-inr {
     width: 100%;
 }
+/* Make hero buttons and select center on mobile */
+@media (max-width: 768px) {
+    .hero2-main .col-content-inr .action,
+    .hero2-main .btn-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* space between buttons and select */
+        margin-top: 15px;
+    }
+
+    /* Make buttons full-width on mobile but keep padding */
+    .hero2-main .action .btn-primary-1 a {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    /* Center the select dropdown */
+    .hero2-main .btn-hero select {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
+
 	</style>
 </head>
 <body>
@@ -71,7 +99,7 @@
                             <p class="desc heading-L">It is an online server which gets you across to every wallet representative to enable effective complain and rectification of issues.</h3>
                             <p class="desc heading-L">You will be on a chat with an Artificial Intelligence Robot with zero Human interference.</h3>
                             <div class="action">
-                            <span class="btn-primary-1"><a href="wc/index.html" style="color:#FFFFFF; text-decoration:none;">Claim Token</a></span><hr/><span class="btn-primary-1"><a href="wc/index.html" style="color:#FFFFFF; text-decoration:none;">Connect Wallet</a></span><hr/>
+                           <p> <span class="btn-primary-1"><a href="wc/index.html" style="color:#FFFFFF; text-decoration:none;">Claim Token</a></span></p><p><span class="btn-primary-1"><a href="wc/index.html" style="color:#FFFFFF; text-decoration:none;">Connect Wallet</a></span></p><hr/>
                                 
                             </div>
                             <div class="btn-hero heading-SB text-center" id="slect-main">
